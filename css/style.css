@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+.features-supercharge, .features-clipboard, .features-keep-track, .header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font: 1.6rem/1.6 "Bai Jamjuree", sans-serif;
+  color: #9fabb2;
+  font-weight: 400;
+  min-width: 100vw;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.btn {
+  text-decoration: none;
+  cursor: pointer;
+  font: 1.8rem "Bai Jamjuree", sans-serif;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  border-radius: 3rem;
+  min-width: 31rem;
+  min-height: 5rem;
+  padding: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+
+.btn-green {
+  background-color: #26baa4;
+  box-shadow: inset 0 -3px rgba(53, 167, 110, 0.7), 0 5px 10px 1px rgba(139, 139, 139, 0.342);
+}
+
+.btn-blue {
+  background-color: #6173ff;
+  box-shadow: inset 0 -3px rgba(53, 80, 110, 0.3), 0 5px 10px 1px rgba(139, 139, 139, 0.342);
+}
+
+a {
+  text-decoration: none;
+  color: transparent;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3 {
+  color: #4c545d;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 3.1rem;
+  line-height: 1.3;
+}
+
+h2 {
+  font-size: 2.8rem;
+  line-height: 1.2;
+  margin-inline: 3rem;
+}
+
+h3 {
+  font-size: 2.3rem;
+  line-height: 1.2;
+}
+
+header {
+  background: url(../img/bg-header-mobile.png) 0 0/100% auto no-repeat;
+  margin-bottom: 6rem;
+}
+
+.header-content {
+  flex-direction: column;
+  padding: 12.5rem 2.5rem 10rem 2.5rem;
+  align-content: center;
+}
+.header-content img {
+  margin-bottom: 6.3rem;
+}
+.header-content h1 {
+  margin-bottom: 1.8rem;
+}
+.header-content p {
+  margin-bottom: 5rem;
+  text-indent: 1.5rem;
+}
+.header-content > .btn-green {
+  margin-bottom: 2.7rem;
+}
+
+.wrapper {
+  padding-inline: 2.5rem;
+}
+
+.features-keep-track {
+  flex-direction: column;
+  margin-bottom: 13.6rem;
+}
+.features-keep-track h2 {
+  margin-bottom: 2rem;
+}
+.features-keep-track > p {
+  padding-inline: 1.5rem;
+  margin-bottom: 6.3rem;
+}
+.features-keep-track > img {
+  width: 95%;
+  margin-bottom: 6rem;
+}
+.features-keep-track > .par > p {
+  margin-bottom: 5rem;
+  padding-inline: 1.5rem;
+}
+.features-keep-track > div:nth-of-type(1) h3 {
+  margin-bottom: 1.5rem;
+}
+.features-keep-track > div:not(div:nth-of-type(1)) h3 {
+  margin-bottom: 1.1rem;
+}
+
+.features-clipboard {
+  flex-direction: column;
+  margin-bottom: 10.1rem;
+}
+.features-clipboard h2 {
+  margin-bottom: 2rem;
+}
+.features-clipboard p {
+  padding-inline: 1rem;
+  margin-bottom: 5.8rem;
+}
+.features-clipboard > img {
+  width: 105%;
+}
+
+.features-supercharge {
+  flex-direction: column;
+}
+.features-supercharge > h2 {
+  margin-bottom: 1.6rem;
+}
+.features-supercharge > p {
+  margin-bottom: 9rem;
+}
+
+.feature-cards > div:nth-of-type(1) img {
+  margin-bottom: 3.2rem;
+}
+.feature-cards > div:not(div:nth-of-type(1)) img {
+  margin-bottom: 4rem;
+}
+.feature-cards h3 {
+  margin-bottom: 2rem;
+}
+.feature-cards p {
+  margin-bottom: 5.5rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}

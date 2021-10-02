@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+@import "./_vars.scss/";
+@import "./_temp.scss/";
+@import "./_mixins.scss/";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font: 1.6rem/1.6 "Bai Jamjuree", sans-serif;
+  color: $GrayishBlue;
+  font-weight: 400;
+  min-width: 100vw;
+  min-height: 100vh;
+  text-align: center;
+}
+.btn {
+  text-decoration: none;
+  cursor: pointer;
+  font: 1.8rem "Bai Jamjuree", sans-serif;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  border-radius: 3rem;
+  min-width: 31rem;
+  min-height: 5rem;
+  padding: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+.btn-green {
+  background-color: $StrongCyan;
+  box-shadow: inset 0 -3px rgba(53, 167, 110, 0.7),
+    0 5px 10px 1px rgba(139, 139, 139, 0.342);
+}
+.btn-blue {
+  background-color: $LightBlue;
+  box-shadow: inset 0 -3px rgba(53, 80, 110, 0.3),
+    0 5px 10px 1px rgba(139, 139, 139, 0.342);
+}
+a {
+  text-decoration: none;
+  color: transparent;
+  cursor: pointer;
+}
+h1,
+h2,
+h3 {
+  color: $DarkGrayishBlue;
+  font-weight: 600;
+}
+h1 {
+  font-size: 3.1rem;
+  line-height: 1.3;
+}
+h2 {
+  @include title(2.8rem, 1.2);
+  margin-inline: 3rem;
+}
+h3 {
+  @include title(2.3rem, 1.2);
+}
+header {
+  background: url(../img/bg-header-mobile.png) 0 0/100% auto no-repeat;
+  margin-bottom: 6rem;
+}
+.header-content {
+  @extend %flex-center;
+  flex-direction: column;
+  padding: 12.5rem 2.5rem 10rem 2.5rem;
+  align-content: center;
+
+  img {
+    margin-bottom: 6.3rem;
+  }
+  h1 {
+    margin-bottom: 1.8rem;
+  }
+  p {
+    margin-bottom: 5rem;
+    text-indent: 1.5rem;
+  }
+  & > .btn-green {
+    margin-bottom: 2.7rem;
+  }
+}
+
+.wrapper {
+  padding-inline: 2.5rem;
+}
+.features-keep-track {
+  @extend %flex-center;
+  flex-direction: column;
+  margin-bottom: 13.6rem;
+
+  h2 {
+    margin-bottom: 2rem;
+  }
+  & > p {
+    padding-inline: 1.5rem;
+    margin-bottom: 6.3rem;
+  }
+  & > img {
+    width: 95%;
+    margin-bottom: 6rem;
+  }
+
+  & > .par > p {
+    margin-bottom: 5rem;
+    padding-inline: 1.5rem;
+  }
+  & > div:nth-of-type(1) h3 {
+    margin-bottom: 1.5rem;
+  }
+  & > div:not(div:nth-of-type(1)) h3 {
+    margin-bottom: 1.1rem;
+  }
+}
+.features-clipboard {
+  @extend %flex-center;
+  flex-direction: column;
+  margin-bottom: 10.1rem;
+
+  h2 {
+    margin-bottom: 2rem;
+  }
+  p {
+    padding-inline: 1rem;
+    margin-bottom: 5.8rem;
+  }
+  & > img {
+    width: 105%;
+  }
+}
+.features-supercharge {
+  @extend %flex-center;
+  flex-direction: column;
+
+  & > h2 {
+    margin-bottom: 1.6rem;
+  }
+  & > p {
+    margin-bottom: 9rem;
+  }
+}
+.feature-cards {
+  & > div:nth-of-type(1) img {
+    margin-bottom: 3.2rem;
+  }
+  & > div:not(div:nth-of-type(1)) img {
+    margin-bottom: 4rem;
+  }
+  h3 {
+    margin-bottom: 2rem;
+  }
+  p {
+    margin-bottom: 5.5rem;
+  }
+}
+
+//сделать репозиторий
+
+//подпись
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+// body шрифт сделать 1.8
+
+//актуальны ли паддинг-инлайн и блок?
