@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
-.features-supercharge, .features-clipboard, .features-keep-track, .header-content {
+.icons, .footer-content, .socials, .features-supercharge, .features-clipboard, .features-keep-track, .header-content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,7 +26,7 @@ body {
 
 .btn {
   text-decoration: none;
-  cursor: pointer;
+  cursor: url(../img/hand-pointer.svg), pointer;
   font: 1.8rem "Bai Jamjuree", sans-serif;
   background-color: transparent;
   color: #fff;
@@ -34,7 +34,7 @@ body {
   border-radius: 3rem;
   min-width: 31rem;
   min-height: 5rem;
-  padding: 1.5rem;
+  padding: 1.6rem;
   letter-spacing: 0.1rem;
 }
 
@@ -42,18 +42,30 @@ body {
   background-color: #26baa4;
   box-shadow: inset 0 -3px rgba(53, 167, 110, 0.7), 0 5px 10px 1px rgba(139, 139, 139, 0.342);
 }
+.btn-green:hover {
+  background-color: #3cd7c0;
+}
 
 .btn-blue {
   background-color: #6173ff;
   box-shadow: inset 0 -3px rgba(53, 80, 110, 0.3), 0 5px 10px 1px rgba(139, 139, 139, 0.342);
 }
+.btn-blue:hover {
+  background-color: #94a0ff;
+}
 
 a {
   text-decoration: none;
-  color: transparent;
-  cursor: pointer;
+  color: inherit;
+  cursor: url(../img/hand-pointer.svg), pointer;
+  /* &:hover {
+    color: $StrongCyan;
+  } */
 }
 
+/* a:hover {
+  color: $StrongCyan;
+} */
 h1,
 h2,
 h3 {
@@ -68,7 +80,7 @@ h1 {
 
 h2 {
   font-size: 2.8rem;
-  line-height: 1.2;
+  line-height: 1.21;
   margin-inline: 3rem;
 }
 
@@ -79,7 +91,7 @@ h3 {
 
 header {
   background: url(../img/bg-header-mobile.png) 0 0/100% auto no-repeat;
-  margin-bottom: 6rem;
+  margin-bottom: 6.2rem;
 }
 
 .header-content {
@@ -87,18 +99,18 @@ header {
   padding: 12.5rem 2.5rem 10rem 2.5rem;
   align-content: center;
 }
-.header-content img {
+.header-content > img {
   margin-bottom: 6.3rem;
 }
-.header-content h1 {
-  margin-bottom: 1.8rem;
+.header-content > h1 {
+  margin-bottom: 1.5rem;
 }
-.header-content p {
-  margin-bottom: 5rem;
+.header-content > p {
+  margin-bottom: 4.9rem;
   text-indent: 1.5rem;
 }
 .header-content > .btn-green {
-  margin-bottom: 2.7rem;
+  margin-bottom: 2.5rem;
 }
 
 .wrapper {
@@ -107,9 +119,9 @@ header {
 
 .features-keep-track {
   flex-direction: column;
-  margin-bottom: 13.6rem;
+  margin-bottom: 13.7rem;
 }
-.features-keep-track h2 {
+.features-keep-track > h2 {
   margin-bottom: 2rem;
 }
 .features-keep-track > p {
@@ -117,7 +129,7 @@ header {
   margin-bottom: 6.3rem;
 }
 .features-keep-track > img {
-  width: 95%;
+  width: 96%;
   margin-bottom: 6rem;
 }
 .features-keep-track > .par > p {
@@ -125,7 +137,7 @@ header {
   padding-inline: 1.5rem;
 }
 .features-keep-track > div:nth-of-type(1) h3 {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
 }
 .features-keep-track > div:not(div:nth-of-type(1)) h3 {
   margin-bottom: 1.1rem;
@@ -133,31 +145,32 @@ header {
 
 .features-clipboard {
   flex-direction: column;
-  margin-bottom: 10.1rem;
+  margin-bottom: 9.8rem;
 }
-.features-clipboard h2 {
-  margin-bottom: 2rem;
+.features-clipboard > h2 {
+  margin-bottom: 1.8rem;
 }
-.features-clipboard p {
+.features-clipboard > p {
   padding-inline: 1rem;
   margin-bottom: 5.8rem;
 }
 .features-clipboard > img {
-  width: 105%;
+  width: 107%;
 }
 
 .features-supercharge {
   flex-direction: column;
+  margin-bottom: 7.5rem;
 }
 .features-supercharge > h2 {
-  margin-bottom: 1.6rem;
+  margin-bottom: 1.3rem;
 }
 .features-supercharge > p {
   margin-bottom: 9rem;
 }
 
 .feature-cards > div:nth-of-type(1) img {
-  margin-bottom: 3.2rem;
+  margin-bottom: 3.4rem;
 }
 .feature-cards > div:not(div:nth-of-type(1)) img {
   margin-bottom: 4rem;
@@ -167,6 +180,73 @@ header {
 }
 .feature-cards p {
   margin-bottom: 5.5rem;
+}
+
+.socials {
+  flex-direction: column;
+  margin-bottom: 10.4rem;
+}
+.socials img {
+  margin-bottom: 5.8rem;
+  width: 83%;
+}
+.socials > a:nth-of-type(2) img {
+  margin-bottom: 6.2rem;
+}
+.socials > a:nth-of-type(3) img {
+  margin-bottom: 5.6rem;
+}
+.socials > a:nth-of-type(4) img {
+  margin-bottom: 5rem;
+}
+
+.call-to-action {
+  margin-bottom: 17rem;
+}
+.call-to-action > h2 {
+  margin-inline: 1.5rem;
+  margin-bottom: 1.9rem;
+}
+.call-to-action > p {
+  margin-bottom: 4.7rem;
+}
+.call-to-action > .btn-green {
+  margin-bottom: 2.5rem;
+}
+
+footer {
+  background-color: #f4f5f6;
+}
+
+.footer-content {
+  flex-direction: column;
+  padding-block: 5rem 3.5rem;
+  font-size: 1.8rem;
+}
+.footer-content > img {
+  width: 15%;
+  margin-bottom: 4.4rem;
+}
+.footer-content a {
+  color: #4c545d;
+  margin-bottom: 2rem;
+}
+.footer-content a:nth-of-type(3) {
+  margin-bottom: 2.2rem;
+}
+.footer-content a:nth-of-type(4) {
+  margin-bottom: 2.3rem;
+}
+.footer-content a:last-of-type {
+  margin-bottom: 4.5rem;
+}
+
+a:hover {
+  color: #26baa4;
+}
+
+.icons img + img {
+  margin-left: 4rem;
 }
 
 .attribution {

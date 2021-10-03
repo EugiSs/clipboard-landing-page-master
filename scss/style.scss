@@ -21,7 +21,7 @@ body {
 }
 .btn {
   text-decoration: none;
-  cursor: pointer;
+  cursor: url(../img/hand-pointer.svg), pointer;
   font: 1.8rem "Bai Jamjuree", sans-serif;
   background-color: transparent;
   color: #fff;
@@ -29,24 +29,39 @@ body {
   border-radius: 3rem;
   min-width: 31rem;
   min-height: 5rem;
-  padding: 1.5rem;
+  padding: 1.6rem;
   letter-spacing: 0.1rem;
 }
 .btn-green {
   background-color: $StrongCyan;
   box-shadow: inset 0 -3px rgba(53, 167, 110, 0.7),
     0 5px 10px 1px rgba(139, 139, 139, 0.342);
+
+  &:hover {
+    background-color: lighten($StrongCyan, 10%);
+  }
 }
 .btn-blue {
   background-color: $LightBlue;
   box-shadow: inset 0 -3px rgba(53, 80, 110, 0.3),
     0 5px 10px 1px rgba(139, 139, 139, 0.342);
+
+  &:hover {
+    background-color: lighten($LightBlue, 10%);
+  }
 }
 a {
   text-decoration: none;
-  color: transparent;
-  cursor: pointer;
+  color: inherit;
+  cursor: url(../img/hand-pointer.svg), pointer;
+
+  /* &:hover {
+    color: $StrongCyan;
+  } */
 }
+/* a:hover {
+  color: $StrongCyan;
+} */
 h1,
 h2,
 h3 {
@@ -58,7 +73,7 @@ h1 {
   line-height: 1.3;
 }
 h2 {
-  @include title(2.8rem, 1.2);
+  @include title(2.8rem, 1.21);
   margin-inline: 3rem;
 }
 h3 {
@@ -66,7 +81,7 @@ h3 {
 }
 header {
   background: url(../img/bg-header-mobile.png) 0 0/100% auto no-repeat;
-  margin-bottom: 6rem;
+  margin-bottom: 6.2rem;
 }
 .header-content {
   @extend %flex-center;
@@ -74,18 +89,18 @@ header {
   padding: 12.5rem 2.5rem 10rem 2.5rem;
   align-content: center;
 
-  img {
+  & > img {
     margin-bottom: 6.3rem;
   }
-  h1 {
-    margin-bottom: 1.8rem;
+  & > h1 {
+    margin-bottom: 1.5rem;
   }
-  p {
-    margin-bottom: 5rem;
+  & > p {
+    margin-bottom: 4.9rem;
     text-indent: 1.5rem;
   }
   & > .btn-green {
-    margin-bottom: 2.7rem;
+    margin-bottom: 2.5rem;
   }
 }
 
@@ -95,9 +110,9 @@ header {
 .features-keep-track {
   @extend %flex-center;
   flex-direction: column;
-  margin-bottom: 13.6rem;
+  margin-bottom: 13.7rem;
 
-  h2 {
+  & > h2 {
     margin-bottom: 2rem;
   }
   & > p {
@@ -105,7 +120,7 @@ header {
     margin-bottom: 6.3rem;
   }
   & > img {
-    width: 95%;
+    width: 96%;
     margin-bottom: 6rem;
   }
 
@@ -114,7 +129,7 @@ header {
     padding-inline: 1.5rem;
   }
   & > div:nth-of-type(1) h3 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
   }
   & > div:not(div:nth-of-type(1)) h3 {
     margin-bottom: 1.1rem;
@@ -123,25 +138,26 @@ header {
 .features-clipboard {
   @extend %flex-center;
   flex-direction: column;
-  margin-bottom: 10.1rem;
+  margin-bottom: 9.8rem;
 
-  h2 {
-    margin-bottom: 2rem;
+  & > h2 {
+    margin-bottom: 1.8rem;
   }
-  p {
+  & > p {
     padding-inline: 1rem;
     margin-bottom: 5.8rem;
   }
   & > img {
-    width: 105%;
+    width: 107%;
   }
 }
 .features-supercharge {
   @extend %flex-center;
   flex-direction: column;
+  margin-bottom: 7.5rem;
 
   & > h2 {
-    margin-bottom: 1.6rem;
+    margin-bottom: 1.3rem;
   }
   & > p {
     margin-bottom: 9rem;
@@ -149,7 +165,7 @@ header {
 }
 .feature-cards {
   & > div:nth-of-type(1) img {
-    margin-bottom: 3.2rem;
+    margin-bottom: 3.4rem;
   }
   & > div:not(div:nth-of-type(1)) img {
     margin-bottom: 4rem;
@@ -161,8 +177,76 @@ header {
     margin-bottom: 5.5rem;
   }
 }
+.socials {
+  @extend %flex-center;
+  flex-direction: column;
+  margin-bottom: 10.4rem;
 
-//сделать репозиторий
+  img {
+    margin-bottom: 5.8rem;
+    width: 83%;
+  }
+  & > a:nth-of-type(2) img {
+    margin-bottom: 6.2rem;
+  }
+  & > a:nth-of-type(3) img {
+    margin-bottom: 5.6rem;
+  }
+  & > a:nth-of-type(4) img {
+    margin-bottom: 5rem;
+  }
+}
+.call-to-action {
+  margin-bottom: 17rem;
+
+  & > h2 {
+    margin-inline: 1.5rem;
+    margin-bottom: 1.9rem;
+  }
+  & > p {
+    margin-bottom: 4.7rem;
+  }
+  & > .btn-green {
+    margin-bottom: 2.5rem;
+  }
+}
+footer {
+  background-color: lighten($GrayishBlue, 30%);
+}
+.footer-content {
+  @extend %flex-center;
+  flex-direction: column;
+  padding-block: 5rem 3.5rem;
+  font-size: 1.8rem;
+
+  & > img {
+    width: 15%;
+    margin-bottom: 4.4rem;
+  }
+  a {
+    color: $DarkGrayishBlue;
+    margin-bottom: 2rem;
+  }
+  & a:nth-of-type(3) {
+    margin-bottom: 2.2rem;
+  }
+  & a:nth-of-type(4) {
+    margin-bottom: 2.3rem;
+  }
+  & a:last-of-type {
+    margin-bottom: 4.5rem;
+  }
+}
+a:hover {
+  color: $StrongCyan;
+}
+.icons {
+  @extend %flex-center;
+
+  img + img {
+    margin-left: 4rem;
+  }
+}
 
 //подпись
 .attribution {
@@ -173,6 +257,3 @@ header {
   color: hsl(228, 45%, 44%);
 }
 
-// body шрифт сделать 1.8
-
-//актуальны ли паддинг-инлайн и блок?
