@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
 .icons, .footer-content nav, .footer-content, .socials, .features-supercharge, .features-clipboard, .features-keep-track, .header-content {
   display: flex;
@@ -409,4 +408,3 @@ footer {
     margin-left: 0;
   }
 }
-/* актуальны ли паддинг-инлайн и блок */
